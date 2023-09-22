@@ -21,9 +21,11 @@ function add() {
         container.id = "list_container"
     
         // Created a paragraph that contains the item from the list 
-        var paragraph = document.createElement("p")
-        paragraph.innerText = inputfield.value
-    
+        var paragraph = document.createElement("input")
+        paragraph.value = inputfield.value
+        paragraph.type = "text"
+        paragraph.readOnly = true
+
         paragraph.id = "Para"
     
         // Created a remove button 🗑️
@@ -31,8 +33,21 @@ function add() {
         button.innerText = "Remove"
     
         button.id = "remove_btn"
+        
+        // Edit button
+        var edit_button = document.createElement("button")
+        edit_button.innerText = "Edit"
     
+        edit_button.id = "edit_btn"
+
+        // save button
+        var save_btn =document.createElement("button")
+        save_btn.innerHTML = "Save"
+
+        save_btn.id = "save_btn"
+
         container.appendChild(paragraph)
+        container.appendChild(edit_button)    
         container.appendChild(button)
         // document.body.appendChild(paragraph)
         // document.body.appendChild(button)
@@ -44,7 +59,18 @@ function add() {
         button.addEventListener("click", function(){
             container.removeChild(paragraph)
             container.removeChild(button)
+            container.removeChild(edit_button)
             container.style.margin = "0px"
+        })
+
+        edit_button.addEventListener("click", function(){
+            paragraph.readOnly = false
+            container.replaceChild(save_btn, edit_button)
+        })
+
+        save_btn.addEventListener("click", function(){
+            paragraph.readOnly = true
+            container.replaceChild(edit_button, save_btn)
         })
     }    
 

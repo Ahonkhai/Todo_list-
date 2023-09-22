@@ -52,6 +52,7 @@ h1{
 
 #remove_btn {
     margin-left: 10px;
+    margin-top: 70px;
     display: inline-block; 
     font-size: 20px;
     font-weight: bold;
@@ -69,10 +70,57 @@ h1{
     color: #d4d4d4;
 }
 
+#edit_btn{
+    margin-left: 10px;
+    margin-top: 70px;
+    display: inline-block; 
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #2f3542; 
+    border: 2px solid #172646; 
+    color: #ffffff; 
+    padding: 5px 10px; 
+    cursor: pointer; 
+    transition: background-color 250ms, color 250ms; 
+}
+
+#edit_btn:hover{
+    background-color: #101216;
+    color: #d4d4d4;
+}
+
+#save_btn{
+    margin-left: 10px;
+    margin-top: 70px;
+    display: inline-block; 
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #2f3542; 
+    border: 2px solid #172646; 
+    color: #ffffff; 
+    padding: 5px 10px; 
+    cursor: pointer; 
+    transition: background-color 250ms, color 250ms; 
+}
+
+#save_btn:hover{
+    background-color: #101216;
+    color: #d4d4d4;
+}
+
 #Para{
     display: inline-block;
     margin-left: 10px;
+    margin-top: 70px;
     font-size: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    width: 600px; 
+    font-size: 20px;
+    text-align: center;
+    border: solid 5px #4a008f;
 }
 
 #list_container{
