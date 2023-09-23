@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: #f1f2f6;
+    background-color: var(--primary-color);
 }
 
 h1, #container{
@@ -18,7 +18,23 @@ h1, #container{
 h1{
     margin-top: 50px;
     font-size: 50px;
-    color: #2f3542;
+    color: var(--secondary-color);
+}
+
+.theme{
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* transform: translateY(90%); */
+}
+
+#Light{
+    width: 50px;
+    cursor: pointer;
+    /* transform: translateY(10px); */
+    margin-bottom: -150px;
+    transition: transform 0.5s ease-in-out;
 }
 
 
@@ -29,7 +45,9 @@ h1{
     width: 700px; 
     font-size: 20px;
     text-align: center;
-    border: solid 5px #4a008f;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: solid 5px var(--extra-color);
     
 }
 
@@ -120,7 +138,9 @@ h1{
     width: 600px; 
     font-size: 20px;
     text-align: center;
-    border: solid 5px #4a008f;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: solid 5px var(--extra-color);
 }
 
 #list_container{
@@ -128,4 +148,16 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+:root{
+    --primary-color:  #f1f2f6;
+    --secondary-color: #000000;
+    --extra-color: #4a008f;
+}
+
+.dark-theme{
+    --primary-color: #151515;
+    --secondary-color: #ffffff;
+    --extra-color: #8400ff;
 }

@@ -74,13 +74,49 @@ function add() {
         })
     }    
 
-    // make a function that when i click enter console.log("enter")
-
-    
-
-
-
 }
+
+
+var LightEl = document.querySelector("#Light")
+
+// Function to get the value of a CSS variable
+function getCSSVariableValue(root) {
+    return getComputedStyle(document.documentElement).getPropertyValue(root).trim();
+  }
+  
+  // Usage
+  const primaryColor = getCSSVariableValue('--primary-color');
+  const secondaryColor = getCSSVariableValue('--secondary-color');
+  const extra = getCSSVariableValue('--extra-color')
+  
+  console.log('Primary Color:', primaryColor); 
+  console.log('Secondary Color:', secondaryColor); 
+  console.log('extra:', extra);
+  
+var dark = false;
+var rotated = false
+
+
+
+function Light() {
+    document.body.classList.toggle("dark-theme");
+    dark = !dark;
+
+    if (dark) {
+      LightEl.src = "images/Light.png";
+    } else {
+      LightEl.src = "images/Dark.png"; 
+    }
+
+    if (rotated) {
+      LightEl.style.transform = "rotate(40deg)";
+      rotated = !rotated;
+    }
+    else {
+      LightEl.style.transform = "rotate(0deg)";
+      rotated = !rotated;
+  }
+  }
 
 
 
