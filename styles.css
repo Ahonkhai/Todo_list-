@@ -5,6 +5,7 @@
 }
 
 body{
+    scroll-behavior: smooth;
     background-color: var(--primary-color);
     transition: color 150ms ease-in-out, background-color 150ms ease-in-out, border 150ms ease-in-out;
 }
@@ -150,6 +151,7 @@ h1{
     margin-left: 10px;
     margin-top: 70px;
     font-size: 20px;
+    font-weight: bold;
     border-radius: 5px;
     padding: 10px;
     width: 600px; 
@@ -179,11 +181,21 @@ h1{
     --primary-color: #151515;
     --secondary-color: #ffffff;
     --extra-color: #8400ff;
-    --background-btn: #003097;
-    --background-btn-hover: #002061;
+    --background-btn: #0069FF;
+    --background-btn-hover: #002861;
 }
 
-
-
- 
-
+#checkbox {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    margin-top: 70px;
+    display: inline-block; 
+    border-radius: 5px;
+    background-color: var(--background-btn); 
+    border: 2px solid #172646; 
+    color: #ffffff; 
+    padding: 5px 10px;
+    cursor: pointer; 
+    transition: background-color 250ms, color 250ms; 
+}
