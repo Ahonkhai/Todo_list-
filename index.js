@@ -2,7 +2,7 @@
   
 var LightEl = document.querySelector("#Light")
     
-// Function to get the value of a CSS variable
+// Function to get the value of a CSS variable 🦆🦆🦆
 function getCSSVariableValue(root) {
 return getComputedStyle(document.documentElement).getPropertyValue(root).trim();
 }
@@ -23,6 +23,8 @@ console.log('background_hover:', background_hover);
 var dark = false;
 var rotated = false
 
+
+// Theme changer 🦆🦆🦆
 function Light() {
     document.body.classList.toggle("dark-theme");
     dark = !dark;
@@ -53,6 +55,8 @@ document.body.addEventListener("keydown", () => {
     add()
     console.log("enter")
 }})
+
+// time and date 🦆🦆🦆
 
 function get_time() {
   var Time = new Date();
@@ -100,15 +104,16 @@ function get_date() {
 var date = get_date();
 console.log(date)
 
+// Add button 🦆🦆🦆
 
 function add() {
-    // Create a container
+    // Create a container 🦆🦆🦆
     if(inputfield.value !== ""){
         var container = document.createElement("div")
 
         container.id = "list_container"
     
-        // Created a paragraph that contains the item from the list 
+        // Created a paragraph that contains the item from the list 🦆🦆🦆
         var paragraph = document.createElement("input")
         paragraph.value = inputfield.value 
         paragraph.type = "text"
@@ -116,13 +121,13 @@ function add() {
 
         paragraph.id = "Para"
     
-        // Created a span that contains the time
+        // Created a span that contains the time 🦆🦆🦆
         var span = document.createElement("span")
         span.innerText = get_time()
 
         span.id = "time"
 
-        // created a checkbox
+        // created a checkbox 🦆🦆🦆
         var checkbox = document.createElement("input")
         checkbox.type = "checkbox"
 
@@ -130,7 +135,7 @@ function add() {
 
         
         checkbox.addEventListener("change", handleCheckboxChange);
-        // created span2 that contains the date
+        // created span2 that contains the date 🦆🦆🦆
         var span2 = document.createElement("span")
         span2.innerText = get_date()
         
@@ -142,13 +147,13 @@ function add() {
         
         button.id = "remove_btn"
         
-        // Edit button
+        // Edit button 🦆🦆🦆
         var edit_button = document.createElement("button")
         edit_button.innerText = "Edit"
         
         edit_button.id = "edit_btn"
         
-        // save button
+        // save button 🦆🦆🦆
         var save_btn =document.createElement("button")
         save_btn.innerHTML = "Save"
         
@@ -156,15 +161,15 @@ function add() {
         
         var timer;
         
-        // Append the paragraph to the container
+        // Append the paragraph to the container 🦆🦆🦆
         container.appendChild(checkbox)
         container.appendChild(span)
         container.appendChild(paragraph)
         container.appendChild(edit_button)    
         container.appendChild(button)
         container.appendChild(span2)
-        // document.body.appendChild(paragraph)
-        // document.body.appendChild(button)
+        // document.body.appendChild(paragraph) 🦆🦆🦆
+        // document.body.appendChild(button) 🦆🦆🦆
         document.body.appendChild(container)
         
         inputfield.value = ""
@@ -194,7 +199,7 @@ function add() {
           if (checkbox.checked === true) {
             timer = setTimeout(function() {
               container.removeChild(checkbox)
-              // Remove other elements and adjust styles as needed
+              // Remove other elements and adjust styles as needed 🦆🦆🦆
               container.removeChild(paragraph)
               container.removeChild(span)
               container.removeChild(span2)
