@@ -30,9 +30,9 @@ function Light() {
     dark = !dark;
 
   if (dark) {
-      LightEl.src = "images/Light.png";
+      LightEl.src = "Images/Light.png";
   } else {
-      LightEl.src = "images/Dark.png"; 
+      LightEl.src = "Images/Dark.png"; 
   }
 
   if (rotated) {
