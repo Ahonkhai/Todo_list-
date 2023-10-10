@@ -200,6 +200,92 @@ h1{
     transition: background-color 250ms, color 250ms; 
 }
 
+/* Tiny_devices */
+@media only screen and (max-width: 368px) {
+    * {
+        padding: 2px;
+    }
+
+    h1 {
+        margin-top: 5px;
+        font-size: 12px; /* Adjusted font size */
+        color: var(--secondary-color);
+    }
+
+    #Light {
+        width: 15px; /* Adjusted width */
+        cursor: pointer;
+        margin-bottom: -15px;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    #input_text {
+        margin-right: 5px;
+        border-radius: 2.5px;
+        padding: 5px;
+        width: 90%; /* Adjusted width */
+        font-size: 12px; /* Adjusted font size */
+        text-align: center;
+        margin-bottom: 10px; /* Adjusted margin */
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+        border: solid 5px var(--extra-color);
+    }
+
+    #btn {
+        margin-left: 5px;
+        margin-bottom: 10px; /* Adjusted margin */
+        border-radius: 5px;
+        padding: 5px;
+        font-size: 12px; /* Adjusted font size */
+        font-weight: bold;
+        color: #ffffff;
+        background-color: var(--background-btn);
+        border: 2px solid #172646;
+        transition: background-color 250ms, color 250ms;
+    }
+
+    /* Rest of the styles for other elements go here, similarly adjusted for smaller screens */
+
+    #Para {
+        display: inline-block;
+        position: relative; /* Adjusted position */
+        margin-top: 10px; /* Adjusted margin */
+        font-size: 12px; /* Adjusted font size */
+        font-weight: bold;
+        border-radius: 2.5px;
+        padding: 5px;
+        width: 90%; /* Adjusted width */
+        text-align: center;
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+        border: solid 5px var(--extra-color);
+    }
+
+    #list_container {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #checkbox {
+        width: 20px;
+        height: 20px;
+        margin-left: 5px;
+        margin-top: -10px;
+        display: inline-block;
+        border-radius: 2.5px;
+        background-color: var(--background-btn);
+        border: 2px solid #172646;
+        color: #ffffff;
+        padding: 5px 10px;
+        cursor: pointer;
+        transform: translateY(50px);
+        transition: background-color 250ms, color 250ms;
+    }
+}
+
 /* mobile_devices */
 @media only screen and (max-width: 768px) {
     /* Adjust the font size for better readability on smaller screens */
@@ -226,7 +312,7 @@ h1{
         border-radius: 2.5px;
         padding: 5px;
         width: 350px; 
-        font-size: 10px;
+        font-size: 13px;
         text-align: center;
         margin-bottom: 40px;
         background-color: var(--primary-color);
@@ -240,7 +326,7 @@ h1{
         margin-bottom: 40px;
         border-radius: 5px;
         padding: 5px;
-        font-size: 10px;
+        font-size: 13px;
         font-weight: bold;
         color: #ffffff; 
         background-color: var(--background-btn); 
@@ -252,7 +338,7 @@ h1{
         margin-left: 5px;
         margin-top: -10px;
         display: inline-block; 
-        font-size: 10px;
+        font-size: 13px;
         font-weight: bold;
         border-radius: 2.5px;
         background-color: var(--background-btn); 
@@ -268,7 +354,7 @@ h1{
         margin-left: 5px;
         margin-top: -10px;
         display: inline-block; 
-        font-size: 10px;
+        font-size: 13px;
         font-weight: bold;
         border-radius: 2.5px;
         background-color: var(--background-btn); 
@@ -284,7 +370,7 @@ h1{
         margin-left: 5px;
         margin-top: -10px;
         display: inline-block; 
-        font-size: 10px;
+        font-size: 13px;
         font-weight: bold;
         border-radius: 2.5px;
         background-color: var(--background-btn); 
@@ -300,7 +386,7 @@ h1{
         margin-left: 5px;
         margin-top: -10px;
         display: inline-block; 
-        font-size: 10px;
+        font-size: 13px;
         font-weight: bold;
         border-radius: 2.5px;
         background-color: var(--background-btn); 
@@ -317,12 +403,12 @@ h1{
         position: absolute;
         margin-left: 5px;
         margin-top: -10px;
-        font-size: 10px;
+        font-size: 13px;
         font-weight: bold;
         border-radius: 2.5px;
         padding: 5px;
         width: 350px; 
-        font-size: 10px;
+        font-size: 14px;
         text-align: center;
         background-color: var(--primary-color);
         color: var(--secondary-color);
