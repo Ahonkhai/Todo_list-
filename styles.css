@@ -199,3 +199,167 @@ h1{
     cursor: pointer; 
     transition: background-color 250ms, color 250ms; 
 }
+
+/* mobile_devices */
+@media only screen and (max-width: 768px) {
+    /* Adjust the font size for better readability on smaller screens */
+    *{
+        padding: 2px;
+    }
+
+    h1{
+        margin-top: 25px;
+        font-size: 25px;
+        color: var(--secondary-color);
+    }
+
+    #Light{
+        width: 30px;
+        cursor: pointer;
+        /* transform: translateY(10px); */
+        margin-bottom: -75px;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    #input_text {
+        margin-right: 5px;
+        border-radius: 2.5px;
+        padding: 5px;
+        width: 350px; 
+        font-size: 10px;
+        text-align: center;
+        margin-bottom: 40px;
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+        border: solid 5px var(--extra-color);
+        
+    }
+
+    #btn {
+        margin-left: 5px; 
+        margin-bottom: 40px;
+        border-radius: 5px;
+        padding: 5px;
+        font-size: 10px;
+        font-weight: bold;
+        color: #ffffff; 
+        background-color: var(--background-btn); 
+        border: 2px solid #172646; 
+        transition: background-color 250ms, color 250ms; 
+    }
+
+    #time{
+        margin-left: 5px;
+        margin-top: -10px;
+        display: inline-block; 
+        font-size: 10px;
+        font-weight: bold;
+        border-radius: 2.5px;
+        background-color: var(--background-btn); 
+        border: 2px solid #172646; 
+        color: #ffffff; 
+        padding: 5px 10px; 
+        cursor: pointer; 
+        transform: translateY(50px);
+        transition: background-color 250ms, color 250ms; 
+    }
+    
+    #remove_btn {
+        margin-left: 5px;
+        margin-top: -10px;
+        display: inline-block; 
+        font-size: 10px;
+        font-weight: bold;
+        border-radius: 2.5px;
+        background-color: var(--background-btn); 
+        border: 2px solid #172646; 
+        color: #ffffff; 
+        padding: 5px 10px; 
+        cursor: pointer; 
+        transform: translateY(50px);
+        transition: background-color 250ms, color 250ms; 
+    }
+
+    #edit_btn{
+        margin-left: 5px;
+        margin-top: -10px;
+        display: inline-block; 
+        font-size: 10px;
+        font-weight: bold;
+        border-radius: 2.5px;
+        background-color: var(--background-btn); 
+        border: 2px solid #172646; 
+        color: #ffffff; 
+        padding: 5px 10px; 
+        cursor: pointer;
+        transform: translateY(50px); 
+        transition: background-color 250ms, color 250ms; 
+    }
+
+    #save_btn{
+        margin-left: 5px;
+        margin-top: -10px;
+        display: inline-block; 
+        font-size: 10px;
+        font-weight: bold;
+        border-radius: 2.5px;
+        background-color: var(--background-btn); 
+        border: 2px solid #172646; 
+        color: #ffffff; 
+        padding: 5px 10px; 
+        cursor: pointer; 
+        transform: translateY(50px);
+        transition: background-color 250ms, color 250ms; 
+    }
+
+    #Para{
+        display: inline-block;
+        position: absolute;
+        margin-left: 5px;
+        margin-top: -10px;
+        font-size: 10px;
+        font-weight: bold;
+        border-radius: 2.5px;
+        padding: 5px;
+        width: 350px; 
+        font-size: 10px;
+        text-align: center;
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+        border: solid 5px var(--extra-color);
+    }
+
+    #list_container{
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #checkbox {
+        width: 20px;
+        height: 20px;
+        margin-left: 5px;
+        margin-top: -10px;
+        display: inline-block; 
+        border-radius: 2.5px;
+        background-color: var(--background-btn); 
+        border: 2px solid #172646; 
+        color: #ffffff; 
+        padding: 5px 10px;
+        cursor: pointer; 
+        transform: translateY(50px);
+        transition: background-color 250ms, color 250ms; 
+    }
+    
+    
+  }
+  
+  /* Tablets and larger devices */
+@media only screen and (min-width: 769px) {
+    /* Reset font size back to 20px for larger screens */
+    * {
+      font-size: 20px;
+    }
+  
+}
