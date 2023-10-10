@@ -183,6 +183,7 @@ function add() {
           container.removeChild(button)
           container.removeChild(edit_button)
           container.style.margin = "0px"
+          container.style.marginBottom = "0px";
         })
 
         edit_button.addEventListener("click", function(){
