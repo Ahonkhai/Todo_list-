@@ -134,7 +134,7 @@ function add() {
         checkbox.id = "checkbox"
 
         
-        checkbox.addEventListener("change", handleCheckboxChange);
+        checkbox.addEventListener("change", confirm_box);
         // created span2 that contains the date 🦆🦆🦆
         var span2 = document.createElement("span")
         span2.innerText = get_date()
@@ -213,7 +213,16 @@ function add() {
           else {
             clearTimeout(timer)
         }
-      }    
+      }
+
+
+      // made a confirm box 🦆🦆🦆
+      function confirm_box() {
+        var box = confirm("Are you sure you want to close this task?")
+        if(box == true){
+          handleCheckboxChange()
+        }
+      }   
       
     }  
 }
